@@ -25,7 +25,8 @@ echo
 tar czf $dest/$archive_file $backup_files
 
 #Print end status message
+echo "Backup done"
 
-
+SCHTASKS /CREATE /SC WEEKLY /D SUN /TN "MyTasks\backup backup_task" /TR "C:\Users\Frank\Desktop\bash_scripting\Taak2\backup-script.sh" /ST 17:00
 
 exit 0
