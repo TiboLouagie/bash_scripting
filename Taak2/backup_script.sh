@@ -15,11 +15,15 @@ datum=$(date +%a)
 hostname=$(hostname)
 
 archive_file="$hostname-$datum.tgz"
+mysql_file="$hostname-$datum-mysql.tgz"
 
 #Print start status message
 echo "Backing up $backup_files to $dest/$archive_file"
 date
 echo
+
+#Backup mysql into source folder
+tar czf $backup_files/$mysql_file mysql
 
 #Backup the files using tar
 tar czf $dest/$archive_file $backup_files
