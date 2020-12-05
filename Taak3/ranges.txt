@@ -1,0 +1,5 @@
+subnet192.168.45.0 netmask255.255.255.0 :
+range 192.168.45.1 192.168.45.10;
+option routers 192.168.45.254;
+option domain-name“nmctrocks.be”;
+option domain-name-servers 192.168.45.40;

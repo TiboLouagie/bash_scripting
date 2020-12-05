@@ -1,7 +1,7 @@
 #!/bin/env bash
-NAME=${1?Error: no name given}
+#NAME=${1?Error: no name given}
 
-echo $NAME
+#echo $NAME
 
 
 #DHCP
@@ -15,7 +15,7 @@ ens_interfaces="ens34"
 
 sudo apt install isc-dhcp-server 
 
-#System-wide host-specific configuration file ? /etc/default/isc-dhcp-server
+#System-wide host-specific configuration file -> /etc/default/isc-dhcp-server
 #Example config
 
 #/default/isc-dhcp-server :
