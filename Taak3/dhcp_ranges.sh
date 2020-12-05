@@ -22,7 +22,7 @@ sudo apt install isc-dhcp-server
 INTERFACESv4=$ens_interfaces
 
 #/etc/dhcp/dhcpd.conf :
-configfile=${cat dhcp-ranges.txt}
+configfile=${cat ranges.txt}
 
 echo "$configfile" >> /etc/dhcp/dhcpd.conf
 
